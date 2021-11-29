@@ -1,0 +1,1 @@
+https://api.meteo-concept.com/api/forecast/daily?token=2c3c2754e63990debfe78a1a00b2cb232d6dea52bcae58217bc587ffad7ebc5e&latlng=48.086,-2.635?hourly

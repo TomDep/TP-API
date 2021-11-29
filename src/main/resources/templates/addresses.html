@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Adresses</title>
+    <!--/*/ 
+        <th:block th:include="fragments/general.html :: headerfiles"></th:block>
+    /*/-->
+</head>
+
+<body>
+    <!--/*/
+        <th:block th:include="fragments/general.html :: navbar"></th:block>
+    /*/-->
+
+    <h1>Affichage de toutes les adresses :</h1>    
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Content</th>
+                <th>Date</th>
+                <th>Auteur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="address : ${allAddresses}">
+                <th th:text="${address.getId()}"></th>
+                <th th:text="${address.getContent()}"></th>
+                <th th:text="${address.getCreation()}"></th>
+                <th th:text="${address.getAuteur()}"></th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
